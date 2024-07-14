@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simple calculator</title>
-  </head>
-  <body>
-    <script>
-      let number1 = Number(prompt("Enter num1"));
-      let number2 = Number(prompt("Enter num2"));
-      let operator = prompt("Enter operator(+,-,*,/,%)");
-      let plus = "+";
-      let mines = "-";
-      let divideBy = "/";
-      let mode = "%";
-      let multiply = "*";
 
-      if (operator === plus) {
-        document.write(number1 + number2);
-      } else if (operator === mines) {
-        document.write(number1 - number2);
-      } else if (operator === divideBy) {
-        document.write(number1 / number2);
-      } else if (operator === mode) {
-        document.write(number1 % number2);
-      } else if (operator === multiply) {
-        document.write(number1 * number2);
-      } else {
-        alert("invalid operator");
-      }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple calculator</title>
+</head>
+
+<body>
+    <script>
+        let number1 = Number(prompt("Enter num1"));
+        let number2 = Number(prompt("Enter num2"));
+        let operator = prompt("Enter operator(+,-,*,/,%)");
+        let plus = "+";
+        let mines = "-";
+        let divideBy = "/";
+        let mode = "%";
+        let multiply = "*";
+
+        if (operator === plus) {
+            document.write(number1 + number2);
+        } else if (operator === mines) {
+            document.write(number1 - number2);
+        } else if (operator === divideBy) {
+            document.write(number1 / number2);
+        } else if (operator === mode) {
+            document.write(number1 % number2);
+        } else if (operator === multiply) {
+            document.write(number1 * number2);
+        } else {
+            alert("invalid operator");
+        }
     </script>
-  </body>
+</body>
+
 </html>
